@@ -2,7 +2,7 @@
 // 이 파일은 JAXB(JavaTM Architecture for XML Binding) 참조 구현 2.3.0 버전을 통해 생성되었습니다. 
 // <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a>를 참조하십시오. 
 // 이 파일을 수정하면 소스 스키마를 재컴파일할 때 수정 사항이 손실됩니다. 
-// 생성 날짜: 2018.10.01 시간 03:30:48 PM KST 
+// 생성 날짜: 2018.10.01 시간 08:47:29 PM KST 
 //
 
 
@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlType;
  *                 &lt;sequence&gt;
  *                   &lt;element name="columnDelimeter" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *                   &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *                   &lt;element name="selectDBId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="selectDBName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *                 &lt;/sequence&gt;
  *                 &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *                 &lt;attribute name="createMethod" type="{}SubVarsCreateType" /&gt;
@@ -101,7 +101,7 @@ public class SubstitutionVarType {
      *       &lt;sequence&gt;
      *         &lt;element name="columnDelimeter" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
      *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-     *         &lt;element name="selectDBId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="selectDBName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
      *       &lt;/sequence&gt;
      *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
      *       &lt;attribute name="createMethod" type="{}SubVarsCreateType" /&gt;
@@ -116,7 +116,7 @@ public class SubstitutionVarType {
     @XmlType(name = "", propOrder = {
         "columnDelimeter",
         "content",
-        "selectDBId"
+        "selectDBName"
     })
     public static class SubsVar {
 
@@ -125,7 +125,7 @@ public class SubstitutionVarType {
         @XmlElement(required = true)
         protected String content;
         @XmlElement(required = true)
-        protected String selectDBId;
+        protected String selectDBName;
         @XmlAttribute(name = "id")
         protected String id;
         @XmlAttribute(name = "createMethod")
@@ -180,27 +180,27 @@ public class SubstitutionVarType {
         }
 
         /**
-         * selectDBId 속성의 값을 가져옵니다.
+         * selectDBName 속성의 값을 가져옵니다.
          * 
          * @return
          *     possible object is
          *     {@link String }
          *     
          */
-        public String getSelectDBId() {
-            return selectDBId;
+        public String getSelectDBName() {
+            return selectDBName;
         }
 
         /**
-         * selectDBId 속성의 값을 설정합니다.
+         * selectDBName 속성의 값을 설정합니다.
          * 
          * @param value
          *     allowed object is
          *     {@link String }
          *     
          */
-        public void setSelectDBId(String value) {
-            this.selectDBId = value;
+        public void setSelectDBName(String value) {
+            this.selectDBName = value;
         }
 
         /**
