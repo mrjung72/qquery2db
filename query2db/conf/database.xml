@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+데이터베이스 접속정보를 정의한다.
+-->
+
+<DBServerInfo>
+
+  <database name="DEV_CARDDB">
+    <driver>oracle.jdbc.driver.OracleDriver</driver>
+    <url>jdbc:oracle:thin:@172.16.5.17:1521:SSCPDB</url>
+    <username>master</username>
+    <password>1111</password>
+  </database>
+
+  <database name="LOCAL_CARDDB">
+    <driver>oracle.jdbc.driver.OracleDriver</driver>
+    <url>jdbc:oracle:thin:@localhost:1521:XE</url>
+    <username>system</username>
+    <password>1111</password>
+  </database>
+
+</DBServerInfo>
